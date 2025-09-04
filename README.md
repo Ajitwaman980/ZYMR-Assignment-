@@ -26,19 +26,7 @@ This project is a simple **Movie Management API** that supports full CRUD operat
 - **Database:** PostgreSQL  
 - **Docs:** Swagger UI  
 
----
 
-## 🔹 Project Structure
-src/
-├─ controller
-├─ routes
-├─ middleware
-├─ swagger
-├─ index.js 
-├─ bin.js 
-└─ test/
-
----
 
 ## 🔹 How to Run Locally
 
@@ -46,10 +34,13 @@ src/
    ```bash
    git clone https://github.com/Ajitwaman980/ZYMR-Assignment-.git
 ```
-
+```
 cd src
-
+```
 nodemon bin.js
 ```
+```
+swagger end point for UI 
+http://localhost:3000/api-docs
 
-
+```
