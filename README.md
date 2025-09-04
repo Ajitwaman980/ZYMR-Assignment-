@@ -1,6 +1,6 @@
 # 🎬 Movie Management API
 
-Hi, my name is **Ajit Waman**.  
+
 This project is a simple **Movie Management API** that supports full CRUD operations along with input validation, caching, and rate limiting.
 
 ---
@@ -30,12 +30,12 @@ This project is a simple **Movie Management API** that supports full CRUD operat
 
 ## 🔹 Project Structure
 src/
-├─ controller/
-├─ routes/
-├─ middleware/
-├─ swagger/
-├─ index.js # Express app
-├─ server.js # Starts the server
+├─ controller
+├─ routes
+├─ middleware
+├─ swagger
+├─ index.js 
+├─ bin.js 
 └─ test/
 
 ---
@@ -48,7 +48,7 @@ src/
 ```
 
 cd src
-```
+
 nodemon bin.js
 ```
 
