@@ -16,10 +16,11 @@ export const getALlMovies = async (req, res) => {
     const skip = (pageNo - 1) * limit; // 2-1
 
     //  check cache data peresent or not using the key = allmovies
-    const cacheKey = `allmovies_${pageNo}_${limit}`; // dynamic cache key
-    if (cache.has(cacheKey)) {
+    // const cacheKey = `allmovies_${pageNo}_${limit}`; // dynamic cache key
+    // const cacheKey="allmovies"
+    if (cache.has("allmovies")) {
       console.log("data from cache");
-      const allmovies = cache.get(cacheKey);
+      const allmovies = cache.get("allmovies");
       return res.status(200).json(allmovies);
     }
 
@@ -30,7 +31,7 @@ export const getALlMovies = async (req, res) => {
         error: "something wrong when the movie data fetch... try again ",
       });
     }
-    cache.set(cacheKey, alldata, 60); // cache for 60 seconds
+    cache.set("allmovies", alldata, 60); // cache for 60 seconds
     res.status(200).json(alldata);
   } catch (error) {
     console.log("fecthing the data from db", error);
