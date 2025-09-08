@@ -31,12 +31,14 @@ A **Node.js + Express** based REST API for managing movies with full **CRUD supp
 
 ## 📂 Project Setup (Run Locally)
 
-1. **Clone the repository**
+```
 git clone https://github.com/Ajitwaman980/ZYMR-Assignment-.git
-2. **Install dependencies**
-npm install  -> cd src -> nodemon bin.js
-3. **Access Swagger UI for API docs**
-   http://localhost:3000/api-docs
+cd ZYMR-Assignment-
+npm install
+cd src
+npx prisma generate
+nodemon bin.js or node bin.js
+```
 
 
 ---
